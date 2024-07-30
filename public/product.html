@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Ptoduct Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    
+      <!-- navbar -->
+      <nav class="navbar bg">
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">HOME</a></li>
+            <li class="link-item"><a href="#" class="link">PRODUCT</a></li>
+            <li class="link-item"><a href="#" class="link">ABOUT</a></li>
+            <li class="link-item"><a href="#" class="link">CONTACT</a></li>
+        </ul>
+        <div class="user-interactions">
+            <div class="cart">
+                <img src="img/cart.png" class="cart-icon"  alt="">
+                <span class="cart-item-count">00</span>
+            </div>
+            <div class="user">
+                <img src="img/user.png" class="user-icon" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- product detail -->
+    <section class="product-section">
+        <img src="img/product-image.png" class="product-image" alt="">
+        <div class="product-detail">
+            <h1 class="product-title">premium sofa</h1>
+            <p class="product-des">This kind of attention to detail is incredibly helpful when it comes to the modern sofa set. The sofa sets of today are highly varied both in terms of their functionality and aesthetics. Their capacity of seating and storage also differs</p>
+            <div class="rating">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/fill star.png" class="star" alt="">
+                <img src="img/no fill star.png" class="star" alt=""> 
+                <span class="rating-count">4,023 reviews</span>
+            </div>
+            <p class="price">$ 499</p>
+            <div class="btn-container">
+                <button class="product-btn buy-btn">buy now</button>
+                <button class="product-btn cart-btn">add to cart</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-des">
+        <h1 class="section-title">details</h1>
+        <p class="des">t is a common mistake to go and select the cheapest of furniture as most of them look unnecessarily to the untrained eye. But the premium quality sofa set is actually designed for maximal comfort and also functions well under different circumstances. They also impact the aesthetic of the room they are placed in, and this impact can be increased when the colours are mixed and matched perfectly with the room and its content. RoyalOak is a premier Indian furniture brand that sells all kinds of furniture including normal and premium sofas. We also offer free delivery and installation services for our customers <br><br>A high-quality piece of upholstery must be made of leather or fabric. Frame: A sofa's frame serves as its support system, therefore it's crucial to pick one with a strong, well-constructed frame. Look for a frame that is well constructed and is composed of strong wood or metal. <br><br>ectional sofas are one of the most popular sofa styles. Sectionals are made of multiple independent pieces and can often be arranged in different configurations, making them easy to fit into different room layouts and optimize your space as much as possible.</p>
+    </section>
+
+      <!-- review section -->
+      <section class="review-section">
+        <h1 class="title">Reviews</h1>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 1.png" alt=""></div>
+                <h2 class="review-title">best quality more than by exceptation</h2>
+                <p class="review"></p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 2.png" alt=""></div>
+                <h2 class="review-title">on time delivery with best packaging</h2>
+                <p class="review"></p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 3.png" alt=""></div>
+                <h2 class="review-title">very helpful customer support</h2>
+                <p class="review"></p>
+            </div>
+            <div class="review-card">
+                <div class="user-dp" data-rating="4.9"><img src="img/user 4.png" alt=""></div>
+                <h2 class="review-title">very easy to refund/return products</h2>
+                <p class="review"></p>
+            </div>
+        </div>
+    </section>
+
+    <!--  add review form -->
+ 
+    <section class="add-review-section">
+        <h1 class="section-title">add a review</h1>
+        <form action="">
+       <div>
+        <input type="text" class="review-headline" placeholder="review headline" id="reviewhead">
+        </div>
+        <textarea name="" placeholder="review" class="review-field" id="review"></textarea>
+       
+        <p class="rating-text">how much you liked the product</p>
+        <div class="star-container">
+            <img src="img/no fill star.png" class="rating-star" alt="">
+            <img src="img/no fill star.png" class="rating-star" alt="">
+            <img src="img/no fill star.png" class="rating-star" alt="">
+            <img src="img/no fill star.png" class="rating-star" alt="">
+            <img src="img/no fill star.png" class="rating-star" alt=""> 
+        </div>
+         <button type="button" onclick="Send()" class="add-review-btn">add review</button>
+        </form>
+    </section>
+
+       <!-- similar product-->
+       <section class="best-selling-product-section">
+        <h1 class="section-title">similar products</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/product-1.png" class="product-img" alt="">
+                <p class="product-name">LIGHTS →</p>
+            </div>
+            <div class="product-card">
+                <img src="img/product-2.png" class="product-img" alt="">
+                <p class="product-name">TABLE →</p>
+            </div> <div class="product-card">
+                <img src="img/product-3.png" class="product-img" alt="">
+                <p class="product-name">STORAGE→</p>
+            </div> <div class="product-card">
+                <img src="img/product-4.png" class="product-img" alt="">
+                <p class="product-name">SOFA →</p>
+            </div>
+        </div>
+        </section>
+
+    <footer>Made by Muskan Jadhav</footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+
+    <script src="js/product.js"></script>
+    
+</body>
+</html>
